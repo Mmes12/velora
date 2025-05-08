@@ -20,7 +20,7 @@ async function  fetchPost(postId) {
 
 
 export default async function Post({ params }) {
-  const {id} = params;
+  const {id} = await params;
   const post = await fetchPost(id);
 
   return(
